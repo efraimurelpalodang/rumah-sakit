@@ -5,8 +5,8 @@
 		<span class="text">AdminHub</span>
 	</a>
 	<ul class="side-menu top">
-		<li class="active">
-			<a href="#">
+		<li class="<?php echo isset($data['dash']) ? $data['dash'] : ''; ?>">
+			<a href="<?= BASEURL ?>/dashboard/index">
 				<i class='bx bxs-dashboard' ></i>
 				<span class="text">Dashboard</span>
 			</a>
@@ -17,8 +17,8 @@
 				<span class="text">Pendaftaran</span>
 			</a>
 		</li>
-		<li>
-			<a href="data_pasien.php">
+		<li class="<?php echo isset($data['pasien']) ? $data['pasien'] : ''; ?>">
+			<a href="<?= BASEURL ?>/pasien/index">
 				<i class='bx bx-food-menu' ></i>
 				<span class="text">Data Pasien</span>
 			</a>
@@ -76,3 +76,24 @@
 		</a>
 	</nav>
 	<!-- NAVBAR -->
+	
+	<!-- MAIN -->
+	<main>
+	<div class="head-title">
+		<div class="left">
+			<h1><?= $data['judul']; ?></h1>
+			<ul class="breadcrumb">
+				<li>
+					<a href="#"><?= $data['judul']; ?></a>
+				</li>
+				<li><i class='bx bx-chevron-right' ></i></li>
+				<li>
+					<a class="active" href="#">Home</a>
+				</li>
+			</ul>
+		</div>
+		<a href="#" class="btn-download">
+		<i class='bx bx-wink-smile bx-sm'></i>
+			<span class="text">Have a good activity</span>
+		</a>
+	</div>

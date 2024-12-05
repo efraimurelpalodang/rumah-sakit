@@ -1,3 +1,4 @@
+</main>
 <!-- My Script -->
 <script src="<?= BASEURL; ?>/js/scriptDash.js"></script>
 <!-- Script Bootstrap -->

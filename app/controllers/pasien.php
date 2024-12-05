@@ -1,15 +1,15 @@
 <?php
 
-class Dashboard extends Controller {
+class Pasien extends Controller {
 
   public function index()
   {
-    $data['judul'] = 'Dashboard';
+    $data['judul'] = 'Data Pasien';
     $data['style'] = DASHBOARD;
-    $data['dash'] = 'active';
+    $data['pasien'] = 'active';
     $this->view('templates/header', $data);
     $this->view('templates/sideNav', $data);
-    $this->view('dashboard/index');
+    $this->view('pasien/index');
     $this->view('templates/footer');
   }
 }
