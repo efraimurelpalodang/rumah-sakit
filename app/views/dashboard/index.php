@@ -24,7 +24,6 @@
 			</li>
 		</ul>
 
-
 		<div class="table-data">
 			<div class="order">
 				<div class="head">

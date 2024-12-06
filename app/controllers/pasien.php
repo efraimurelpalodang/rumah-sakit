@@ -6,6 +6,7 @@ class Pasien extends Controller {
   {
     $data['judul'] = 'Data Pasien';
     $data['style'] = DASHBOARD;
+    $data['stylePage'] = '<link rel="stylesheet" href="'. BASEURL .'/css/tablestyle.css">';
     $data['pasien'] = 'active';
     $this->view('templates/header', $data);
     $this->view('templates/sideNav', $data);
