@@ -1,1 +1,34 @@
 /* Gak tau apa errornya dah males */
+table {
+  margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+th {
+  background-color: #3C91E6;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ecf0f1;
+  background-color: #e5edf4;
+}
+
+tr:hover {
+  background-color: #e5edf4;
+}
+
+tr td a:first-child {
+  color: green;
+}
+
+tr td a:last-child {
+  color: red;
+}
+
